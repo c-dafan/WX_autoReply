@@ -1,0 +1,24 @@
+logging:
+  pattern:
+    console:  "%d -- %logger -- %msg -- %n"
+
+spring:
+  rabbitmq:
+    addresses: 106.13.50.135:5672
+    username: guest
+    password: guest
+    virtual-host: /
+    connection-timeout: 15000
+    template:
+      mandatory: true
+
+server:
+  servlet:
+    context-path: /demo
+  port: 80
+
+
+wechat:
+  appid: ----
+  appsecret: ----
+  token: ------
